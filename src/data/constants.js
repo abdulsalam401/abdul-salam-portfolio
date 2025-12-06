@@ -5,7 +5,7 @@ import backendImage from "./Backend_Developer.png";
 
 export const Bio = {
   name: "Nadeem Ahmad",
-  roles: ["Data Enthusiast", "Data Analyst", "Data Engineer", "ETL Developer"],
+  roles: ["Programmer", "MERN Stack Developer", "Data Enthusiast", "Junior Data Analyst", "Junior Data Engineer"],
   description:
     "A detail-oriented and analytical Data professional, passionate about transforming raw data into actionable business intelligence and data-driven strategies. Currently enhancing expertise in end-to-end data processes, from ETL workflows to insightful visualization, with a strong focus on solving real-world business challenges. Brings a unique blend of structured problem-solving and technical depth, enabling effective translation of data into clear, impactful solutions. A dedicated and adaptable learner, committed to contributing to teams that leverage data for smarter decision-making and measurable organizational growth.",
   github: "https://github.com/nadeembscs2021",
