@@ -5,7 +5,7 @@ import backendImage from "./Backend_Developer.png";
 
 export const Bio = {
   name: "Nadeem Ahmad",
-  roles: ["Programmer", "MERN Stack Developer", "Data Enthusiast", "Junior Data Analyst", "Junior Data Engineer"],
+  roles: ["Programmer", "MERN Stack Developer", "Data Enthusiast"],
   description:
     "Highly motivated and results-oriented Web Developer with a solid foundation in the MERN stack and modern web development practices. Driven by a passion for building scalable, user-centric, and high-performance web applications that solve real-world problems. Recognized for a sharp problem-solving mindset, fast learning ability, and the capacity to perform effectively in fast-paced, technology-driven environments. Skilled in writing clean, maintainable code and collaborating within agile teams to deliver reliable digital solutions.",
   github: "https://github.com/nadeembscs2021",
