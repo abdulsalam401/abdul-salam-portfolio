@@ -11,6 +11,19 @@ const MemberImage = ({ src }) => (
 );
 const ProjectDetails = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
+
+  const handleViewCode = () => {
+    if (project?.github) {
+      window.open(project.github, "_blank", "noopener,noreferrer");
+    }
+  };
+
+  const handleViewLiveApp = () => {
+    if (project?.webapp) {
+      window.open(project.webapp, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
     <Modal
       open={true}
@@ -87,18 +100,28 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
           {/* button group */}
           <div className="flex justify-end my-3 gap-3">
             <button
-              className={`text-[12px] w-full  text-center md:text-[16px] font-semibold py-3 px-1 rounded-[8px] ${
+              onClick={handleViewCode}
+              className={`text-[12px] w-full text-center md:text-[16px] font-semibold py-3 px-1 rounded-[8px] ${
                 project?.dull
                   ? "bg-lightTheme-bg hover:bg-lightTheme-bgLight text-lightTheme-text_secondary"
                   : "bg-darkTheme-text_secondary"
               } cursor-pointer no-underline transition-all duration-500 ease`}
+              disabled={!project?.github}
+              style={{
+                opacity: project?.github ? 1 : 0.5,
+                cursor: project?.github ? "pointer" : "not-allowed",
+              }}
             >
               View Code
             </button>
             <button
-              className="w-full  text-center text-[14px] md:text-[16px]  font-semibold py-3 px-1 rounded-[8px] bg-darkTheme-primary cursor-pointer transition-all duration-500 ease"
-              href={project?.webapp}
-              target="new"
+              onClick={handleViewLiveApp}
+              className="w-full text-center text-[14px] md:text-[16px] font-semibold py-3 px-1 rounded-[8px] bg-darkTheme-primary cursor-pointer transition-all duration-500 ease"
+              disabled={!project?.webapp}
+              style={{
+                opacity: project?.webapp ? 1 : 0.5,
+                cursor: project?.webapp ? "pointer" : "not-allowed",
+              }}
             >
               View Live App
             </button>
