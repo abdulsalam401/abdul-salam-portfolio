@@ -7,7 +7,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal scrolling globally */
 }
+
+body {
+  overflow-x: hidden; /* Additional safeguard for body overflows */
+  margin: 0; /* Reset default margins that could cause issues */
+}
+
 @layer base {
   html {
     font-family: "Raleway", sans-serif;
