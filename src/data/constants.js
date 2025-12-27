@@ -13,7 +13,7 @@ export const Bio = {
     "Highly motivated and results-oriented Web Developer with a solid foundation in the MERN stack and modern web development practices. Driven by a passion for building scalable, user-centric, and high-performance web applications that solve real-world problems. Recognized for a sharp problem-solving mindset, fast learning ability, and the capacity to perform effectively in fast-paced, technology-driven environments. Skilled in writing clean, maintainable code and collaborating within agile teams to deliver reliable digital solutions.",
   github: "https://github.com/nadeembscs2021",
   resume:
-    "https://drive.google.com/file/d/1gYgq1RUoMMCuybk62hJHwGaUqhvMwD1H/view?usp=sharing",
+    "https://drive.google.com/file/d/1IDsgi83GLK8EFrKvJ9oKQBUohSH0r-5r/view?usp=sharing",
   linkedin: "http://www.linkedin.com/in/nadeem-ahmad-529b4326a",
   twitter: "https://x.com/NadeemKhan_2021?t=ZexRV3G3pyLRBDQ13W9UUg&s=09",
   insta: "https://www.instagram.com/nadeembscs2021?igsh=MjQ5aGYxZjFjbmRp",
