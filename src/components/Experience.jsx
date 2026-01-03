@@ -9,6 +9,7 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import { experiences } from "../data/constants";
 import ExperienceCard from "./ExperienceCard";
 const Experience = () => {
+  if (!experiences || experiences.length === 0) return null;
   return (
     <section
       id="experience"

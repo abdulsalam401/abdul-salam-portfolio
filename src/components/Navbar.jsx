@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="flex max-w-7xl mx-auto justify-between items-center w-full h-20 text-white bg-darkTheme-card_light px-6 ">
         <div>
           <a className="text-4xl md:text-5xl font-signature" href="#home">
-            Nadeem
+            Abdul Salam
           </a>
         </div>
         <ul className="hidden md:flex space-x-4">

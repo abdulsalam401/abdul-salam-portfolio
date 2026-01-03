@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Snackbar } from "@mui/material";
 import emailjs from "@emailjs/browser";
+import { Bio } from "../data/constants";
 const Contact = () => {
   //hooks
   const [open, setOpen] = useState(false);
@@ -36,6 +37,13 @@ const Contact = () => {
         </div>
         <div className="text-[16px] text-center max-w-[600px] text-darkTheme-text_secondary mt-3 md:text-[18px]">
           Feel free to reach out to me for any questions or opportunities!
+          <br />
+          <a
+            href={`mailto:${Bio.email}`}
+            className="text-darkTheme-primary font-semibold hover:underline"
+          >
+            {Bio.email}
+          </a>
         </div>
         <form
           ref={form}

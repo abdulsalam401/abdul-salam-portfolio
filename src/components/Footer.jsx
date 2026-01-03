@@ -13,10 +13,10 @@ const Footer = () => {
       <div className="w-full max-w-[1200px] flex flex-col gap-[14px] items-center p-[16px] text-darkTheme-text_primary">
         <div className="flex gap-3">
           <h1 className=" font-bold text-[27px] md:text-[24px] text-darkTheme-primary font-signature">
-            Nadeem
+            Abdul
           </h1>
           <h1 className=" font-bold text-[27px] md:text-[24px] text-darkTheme-primary font-signature">
-            Ahmad
+            Salam
           </h1>
         </div>
         <nav className="w-full max-w-[800px] flex flex-row flex-wrap gap-[18px] justify-center mt-[4px]">
@@ -89,7 +89,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="mt-[24px] text-[14px]  text-center">
-          &copy; 2025 Nadeem Ahmad. All rights reserved.
+          &copy; 2026 Abdul Salam. All rights reserved.
         </p>
       </div>
     </div>
