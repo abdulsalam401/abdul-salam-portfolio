@@ -18,7 +18,7 @@ export const Bio = {
   description:
     "I am a BS Computer Science student with a strong focus on Cybersecurity, Cryptography, and Network Security. My passion lies in understanding secure system designs, malware analysis, and incident response. I am actively learning ethical hacking techniques and Python scripting to automate security tasks. I am dedicated to building secure, resilient systems and identifying vulnerabilities before they can be exploited.",
   github: "https://github.com/abdulsalam401",
-  resume: "https://drive.google.com/file/d/1Moxci3Sg80XWBciSe0UaA6aY3RfEQxod/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1wG_Awyyj5p9wvtPq7osdK4n0S7s6XZWb/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/abdul-salam-39467a274",
   twitter: "https://x.com/abdulsalamyt72",
   insta: "https://www.instagram.com/abdul.salam23",

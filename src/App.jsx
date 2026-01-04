@@ -3,7 +3,7 @@ import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Wrapper from "./utils/Wrapper";
-import Experience from "./components/Experience";
+
 import Projects from "./components/Projects";
 import ProjectDetails from "./components/ProjectDetails";
 import Education from "./components/Education";
@@ -23,9 +23,7 @@ const App = () => {
           <section id="skills">
             <Skills />
           </section>
-          <section id="experience">
-            <Experience />
-          </section>
+
         </Wrapper>
         <section id="projects">
           <Projects openModal={openModal} setOpenModal={setOpenModal} />

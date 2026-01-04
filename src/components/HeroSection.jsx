@@ -49,7 +49,7 @@ const HeroSection = () => {
           <img
             src={HeroImg}
             alt="hero-image"
-            className="relative object-cover w-full  max-w-[280px] max-h-[280px] sm:max-w-[400px] sm:max-h-[400px]  rounded-full ring-2 ring-purple-800 "
+            className="relative object-cover w-full  max-w-[280px] max-h-[280px] sm:max-w-[400px] sm:max-h-[400px] aspect-square rounded-full ring-2 ring-purple-800 "
           />
         </div>
       </div>

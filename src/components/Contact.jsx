@@ -12,12 +12,12 @@ const Contact = () => {
     emailjs
       .sendForm(
         // "service_ID",
-        "service_3e6tub5",
+        "service_sa9b2fo",
         // "template_ID",
-        "template_4qa43we",
+        "template_2g2pah6",
         form.current,
         // "Public API Key",
-        "F0eTCd7n9anPr67P4"
+        "UTTa2InzCgs-OvqbC"
       )
       .then(
         (result) => {
@@ -55,17 +55,17 @@ const Contact = () => {
           </div>
           <input
             placeholder="Your Email"
-            name="from_email"
+            name="email"
             className="flex-1 bg-transparent border border-darkTheme-text_secondary outline-none text-[18px] text-darkTheme-text_primary rounded-xl py-3 px-4 focus:border-darkTheme-primary"
           />
           <input
             placeholder="Your Name"
-            name="from_name"
+            name="name"
             className="flex-1 bg-transparent border border-darkTheme-text_secondary outline-none text-[18px] text-darkTheme-text_primary rounded-xl py-3 px-4 focus:border-darkTheme-primary"
           />
           <input
             placeholder="Subject"
-            name="subject"
+            name="title"
             className="flex-1 bg-transparent border border-darkTheme-text_secondary outline-none text-[18px] text-darkTheme-text_primary rounded-xl py-3 px-4 focus:border-darkTheme-primary"
           />
           <textarea
