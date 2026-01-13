@@ -58,6 +58,10 @@ export const skills = [
         name: "JavaScript",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
       },
+      {
+        name: "Machine Learning",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/260px-Scikit_learn_logo_small.svg.png",
+      },
     ],
   },
   {
@@ -83,6 +87,18 @@ export const skills = [
         name: "Ethical Hacking",
         image: "https://static.thenounproject.com/png/870666-200.png",
       },
+      {
+        name: "Post-Quantum Cryptography",
+        image: "https://openquantumsafe.org/assets/img/oqs_logo.png",
+      },
+      {
+        name: "Honeypots",
+        image: "https://cdn-icons-png.flaticon.com/512/2312/2312388.png",
+      },
+      {
+        name: "Bot Detection",
+        image: "https://cdn-icons-png.flaticon.com/512/1691/1691901.png",
+      },
     ],
   },
   {
@@ -103,6 +119,10 @@ export const skills = [
       {
         name: "Express.js",
         image: "https://img.icons8.com/color/48/express-js.png",
+      },
+      {
+        name: "Chrome Extensions",
+        image: "https://static.thenounproject.com/png/3923782-200.png",
       },
     ],
   },
@@ -132,6 +152,10 @@ export const skills = [
       {
         name: "HackTheBox",
         image: "https://images.credly.com/images/3dcd637f-f94a-4405-9448-0409361214da/blob.png",
+      },
+      {
+        name: "Docker",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
       },
     ],
   },
