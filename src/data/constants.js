@@ -89,7 +89,7 @@ export const skills = [
       },
       {
         name: "Post-Quantum Cryptography",
-        image: "https://openquantumsafe.org/assets/img/oqs_logo.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLQGjOG7XeTP9wBCL7uQOoaYvV01gZMZaHAw&s",
       },
       {
         name: "Honeypots",
@@ -118,7 +118,7 @@ export const skills = [
       },
       {
         name: "Express.js",
-        image: "https://img.icons8.com/color/48/express-js.png",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
       },
       {
         name: "Chrome Extensions",

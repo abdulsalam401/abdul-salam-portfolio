@@ -12,12 +12,7 @@ const Projects = ({ openModal, setOpenModal }) => {
           Projects
         </h2>
         {/* descp */}
-        <p className="md:text-[18px] text-center max-w-[600px] text-darkTheme-text_secondary mt-3 text-[16px] md:mt-0">
-          {" "}
-          I have worked on a variety of web projects, ranging from simple
-          designs to dynamic applications. Here are some highlights of my work.
-          {/* I have worked on a wide range of web projects. Here are some of my projects. */}
-        </p>
+
         {/* toggle button group */}
         <div className="flex border border-darkTheme-primary text-darkTheme-primary md:text-[16px] font-medium rounded-xl my-5 text-[12px]">
           {toggle === "cybersecurity" ? (
