@@ -1,4 +1,6 @@
 import profileImg from "../assets/abdul.jpg";
+import athenaShield from "./Athena-Shield.png";
+import passwordManager from "./Password-Manager.png";
 // import votingImage from "./My-fyp-CMS-App.png";
 // import proshopClient from "./Client_SideGarments_Store.png";
 // import proshopAdmin from "./Admin-panel-Garments_Store.png";
@@ -256,7 +258,7 @@ import ttsImage from "./image copy 2.png";
 export const projects = [
   {
     id: 1,
-    title: "Quantum-Resilient Secure Communication with Adaptive Hybrid Encryption",
+    title: "Quantum-Resilient Secure Communication with Adaptive Hybrid Encryption (Currently Under-Development)",
     date: "Jan 2025 - Present",
     description:
       "Implemented a hybrid encryption model combining RSA and Kyber (post-quantum) to simulate defense against quantum attacks. Achieved adaptive fallback and attack detection logic using Python, Django, and OpenQuantumSafe. Project demonstrates readiness for next-gen cryptographic challenges — a key research area in cybersecurity. ",
@@ -264,6 +266,18 @@ export const projects = [
     tags: ["Python", "Cryptography", "LibOQS", "Kyber and RSA", "Django", "Algorithms", "OpenQuantumSafe"],
     category: "cybersecurity",
     github: "https://drive.google.com/drive/folders/1OOeJr1vqNbkAnT2azYnpMAJ8HbOO6e7S?usp=sharing",
+    webapp: "#",
+  },
+  {
+    id: 0,
+    title: "Athena Shield",
+    date: "Jan 2026 - Present",
+    description:
+      "The Next-Generation Bot & Fraud Detection Platform. Athena Shield is a research-grade security platform designed to detect and mitigate sophisticated automated threats. It employs behavioral biometrics, honeypot traps, and machine learning to distinguish human users from bots.",
+    image: athenaShield,
+    tags: ["Python", "Machine Learning", "Honeypots", "Behavioral Biometrics", "Browser Fingerprinting", "Docker"],
+    category: "cybersecurity",
+    github: "https://github.com/abdulsalam401/Athena-Shield",
     webapp: "#",
   },
   {
@@ -275,9 +289,23 @@ export const projects = [
     image: crypticImage,
     tags: ["Python", "Django", "AES", "CBC Mode", "File Encryption", "File Decryption", "Padding", "Unpadding", "File Download", "Content Handling"],
     category: "cybersecurity",
-    github: "https://drive.google.com/file/d/1JEwLIg_R3yEJAdmRfiib0MjdIzY37qwT/view?usp=sharing",
+    github: "https://github.com/abdulsalam401/Cryptic-Secure-Communication",
     webapp: "#",
   },
+  {
+    id: 0.5,
+    title: "Secure Password Manager",
+    date: "Dec 2025",
+    description:
+      "A secure, local password manager that runs on your machine. It uses Strong Encryption (AES-128 + PBKDF2) to keep your passwords safe and stores them locally in an encrypted vault. Includes a Chrome Extension for Auto-Fill and Auto-Save capabilities.",
+    image: passwordManager,
+    tags: ["Python", "Cryptography", "Chrome Extension", "AES-256", "PBKDF2", "Native Messaging"],
+    category: "cybersecurity",
+    github: "https://github.com/abdulsalam401/Password-Manager-Chrome-Extension",
+    webapp: "#",
+  },
+
+
   {
     id: 3,
     title: "Text-to-Speech Converter",
@@ -286,7 +314,7 @@ export const projects = [
       "Developed a text-to-speech application that converts written text into natural-sounding audio. Focused on usability and clear voice output for accessibility purposes.",
     image: ttsImage,
     tags: ["Python", "Text-to-Speech (TTS)", "Automation"],
-    category: "cybersecurity",
+    category: "Python",
     github: "https://github.com/abdulsalam401",
     webapp: "#",
   },

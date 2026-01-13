@@ -12,7 +12,7 @@ const ProjectCard = ({ project, setOpenModal }) => {
   return (
     // card
     <div
-      onClick={() => setOpenModal({ state: true, project: project })}
+      onClick={() => setOpenModal({ state: true, project: project, type: "project" })}
       className="w-[330px] h-[490px] bg-darkTheme-bg cursor-pointer rounded-[10px] shadow-lg overflow-hidden transition-transform ease-in-out duration-500 hover:translate-y-[-10px] hover:shadow-2xl hover:brightness-[1.1] py-[26px] px-[20px]"
     >
       <img

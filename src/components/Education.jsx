@@ -7,7 +7,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import EducationCard from "./EducationCard";
-const Education = () => {
+const Education = ({ openModal, setOpenModal }) => {
   return (
     // container
     <div
@@ -53,7 +53,16 @@ const Education = () => {
                 {certifications.map((cert, index) => (
                   <TimelineItem key={index}>
                     <TimelineContent sx={{ py: "12px", px: 2 }}>
-                      <EducationCard education={cert} />
+                      <EducationCard
+                        education={cert}
+                        onClick={() =>
+                          setOpenModal({
+                            state: true,
+                            project: cert,
+                            type: "certificate",
+                          })
+                        }
+                      />
                     </TimelineContent>
                     <TimelineSeparator>
                       <TimelineDot variant="outlined" color="secondary" />
