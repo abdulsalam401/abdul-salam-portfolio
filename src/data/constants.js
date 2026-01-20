@@ -279,7 +279,21 @@ import quantImage from "./image.png";
 import crypticImage from "./image copy.png";
 import ttsImage from "./image copy 2.png";
 
+import nidsImage from "./NIDS.png";
+
 export const projects = [
+  {
+    id: 0.1,
+    title: "Network Intrusion Detection System (NIDS)",
+    date: "Jan 2026 - Present",
+    description:
+      "Educational NIDS Framework & Demo System designed to demonstrate the workflow of an Intrusion Detection System (IDS). Features Live Packet Capture (Scapy), AI Intelligence (Random Forest) for traffic classification, and a Hybrid Operation mode. Includes a modern interactive dashboard for real-time visualization of threats and security scores.",
+    image: nidsImage,
+    tags: ["Python", "Node.js", "Scapy", "Machine Learning", "Random Forest", "Network Security", "Real-time Monitoring"],
+    category: "cybersecurity",
+    github: "https://github.com/abdulsalam401/NID-System",
+    webapp: "https://nids-project-demo-omega.vercel.app/",
+  },
   {
     id: 1,
     title: "Quantum-Resilient Secure Communication with Adaptive Hybrid Encryption (Currently Under-Development)",
