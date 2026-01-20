@@ -328,7 +328,7 @@ export const projects = [
     tags: ["Python", "Django", "AES", "CBC Mode", "File Encryption", "File Decryption", "Padding", "Unpadding", "File Download", "Content Handling"],
     category: "cybersecurity",
     github: "https://github.com/abdulsalam401/Cryptic-Secure-Communication",
-    webapp: "#",
+    webapp: "https://cryptic-secure-communication.vercel.app/",
   },
   {
     id: 0.5,
