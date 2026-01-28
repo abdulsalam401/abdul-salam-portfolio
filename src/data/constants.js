@@ -1,4 +1,4 @@
-import profileImg from "../assets/abdul.jpg";
+import profileImg from "../assets/my.png";
 import athenaShield from "./Athena-Shield.png";
 import passwordManager from "./Password-Manager.png";
 // import votingImage from "./My-fyp-CMS-App.png";
