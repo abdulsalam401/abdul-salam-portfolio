@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../assets/my.png";
+import HeroImg from "../assets/my2.png";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../data/constants";
 const HeroSection = () => {
@@ -49,7 +49,7 @@ const HeroSection = () => {
           <img
             src={HeroImg}
             alt="hero-image"
-            className="relative object-cover w-full  max-w-[280px] max-h-[280px] sm:max-w-[400px] sm:max-h-[400px] aspect-square rounded-full ring-2 ring-purple-800 "
+            className="relative object-cover w-full max-w-[280px] max-h-[280px] sm:max-w-[400px] sm:max-h-[400px] aspect-square rounded-full ring-4 ring-purple-600 shadow-2xl shadow-purple-500/50"
           />
         </div>
       </div>
