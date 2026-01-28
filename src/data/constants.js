@@ -303,8 +303,8 @@ export const projects = [
     image: quantImage,
     tags: ["Python", "Cryptography", "LibOQS", "Kyber and RSA", "Django", "Algorithms", "OpenQuantumSafe"],
     category: "cybersecurity",
-    github: "https://drive.google.com/drive/folders/1OOeJr1vqNbkAnT2azYnpMAJ8HbOO6e7S?usp=sharing",
-    webapp: "#",
+    github: "#",
+    webapp: "https://quantum-gem-fyp-bscs.vercel.app/",
   },
   {
     id: 0,
@@ -328,7 +328,7 @@ export const projects = [
     tags: ["Python", "Django", "AES", "CBC Mode", "File Encryption", "File Decryption", "Padding", "Unpadding", "File Download", "Content Handling"],
     category: "cybersecurity",
     github: "https://github.com/abdulsalam401/Cryptic-Secure-Communication",
-    webapp: "#",
+    webapp: "https://cryptic-secure-communication.vercel.app/",
   },
   {
     id: 0.5,
