@@ -3,6 +3,8 @@ import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Wrapper from "./utils/Wrapper";
+import Background from "./components/Background";
+import CustomCursor from "./components/CustomCursor";
 
 import Projects from "./components/Projects";
 import ProjectDetails from "./components/ProjectDetails";
@@ -14,9 +16,10 @@ import Footer from "./components/Footer";
 const App = () => {
   const [openModal, setOpenModal] = useState({ state: false, project: null, type: "project" });
   return (
-    <>
+    <Background>
+      <CustomCursor />
       <Navbar />
-      <div className="w-full bg-darkTheme-card_light">
+      <div className="w-full relative z-10">
         <section id="hero">
           <HeroSection />
         </section>
@@ -45,7 +48,7 @@ const App = () => {
           <CertificateDetails openModal={openModal} setOpenModal={setOpenModal} />
         )}
       </div>
-    </>
+    </Background>
   );
 };
 

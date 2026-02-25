@@ -14,45 +14,47 @@ const Navbar = () => {
   return (
     <div
       id="home"
-      className="flex w-full items-center justify-center h-20 text-lightTheme-card sticky bg-darkTheme-card_light z-10 top-0"
+      className="flex w-full items-center justify-center h-20 fixed z-50 top-4 px-4 sm:px-10 transition-all duration-300"
     >
-      <div className="flex max-w-7xl mx-auto justify-between items-center w-full h-20 text-white bg-darkTheme-card_light px-6 ">
+      <div className="flex max-w-7xl mx-auto justify-between items-center w-full h-16 text-white glassmorphism px-6 sm:px-8 rounded-full border border-neon-purple/30 shadow-[0_0_15px_rgba(188,19,254,0.2)]">
         <div>
-          <a className="text-4xl md:text-5xl font-signature" href="#home">
+          <a className="text-3xl md:text-4xl font-signature text-white text-glow-purple" href="#home">
             Abdul Salam
           </a>
         </div>
-        <ul className="hidden md:flex space-x-4">
+        <ul className="hidden md:flex space-x-6">
           {links.map(({ id, link, hrefValue }) => (
             <a
               href={hrefValue}
               key={id}
-              className="cursor-pointer capitalize font-medium text-darkTheme-text_primary hover:text-darkTheme-primary transition-colors duration-200"
+              className="cursor-pointer capitalize font-medium text-darkTheme-text_primary hover:text-neon-cyan hover:text-glow-cyan transition-all duration-300"
             >
-              {link}
+              <li>{link}</li>
             </a>
           ))}
         </ul>
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-10 text-darkTheme-text_primary md:hidden"
+          className="cursor-pointer pr-2 z-50 text-darkTheme-text_primary hover:text-neon-cyan transition-colors md:hidden"
         >
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
-        {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-darkTheme-card_light ">
+
+        {/* Mobile Menu */}
+        <div className={`fixed top-0 left-0 w-full h-screen glassmorphism !bg-darkTheme-bg/95 z-40 flex flex-col justify-center items-center transition-transform duration-500 ease-in-out ${nav ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"} md:hidden text-white`}>
+          <ul className="flex flex-col justify-center items-center w-full">
             {links.map(({ id, link, hrefValue }) => (
               <a
                 href={hrefValue}
                 onClick={() => setNav(!nav)}
                 key={id}
-                className="cursor-pointer capitalize font-medium text-darkTheme-text_primary py-6 text-2xl md:text-4xl"
+                className="cursor-pointer capitalize font-semibold text-darkTheme-text_primary py-6 text-3xl hover:text-neon-cyan hover:text-glow-cyan transition-all duration-300"
               >
-                {link}
+                <li>{link}</li>
               </a>
             ))}
           </ul>
-        )}
+        </div>
       </div>
     </div>
   );
