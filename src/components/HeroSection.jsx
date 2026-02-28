@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <div
       id="about"
-      className="flex justify-center sm:py-[100px] sm:px-[30px] px-4 py-16 relative w-full mx-auto min-h-screen items-center"
+      className="flex justify-center pt-[120px] pb-16 sm:pt-[150px] sm:pb-[100px] sm:px-[30px] px-4 relative w-full mx-auto min-h-screen items-center"
     >
       <div className="flex flex-col lg:flex-row justify-between items-center w-full max-w-6xl gap-5 relative z-10">
         <motion.div
