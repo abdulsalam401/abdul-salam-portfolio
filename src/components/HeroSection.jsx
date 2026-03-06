@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../assets/my2.png";
+import HeroImg from "../assets/my2.webp";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../data/constants";
 import { motion } from "framer-motion";
@@ -19,16 +19,16 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.h1
-            className="font-bold text-center text-5xl md:text-6xl lg:text-start text-white mb-4 text-glow-purple tracking-tight leading-tight"
+            className="font-semibold text-center text-5xl md:text-6xl lg:text-start text-white mb-4 text-glow-purple tracking-normal leading-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             Hi, I am <br />
-            <span className="text-neon-cyan text-glow-cyan">{Bio.name}</span>
+            <span className="text-neon-cyan text-glow-cyan font-bold tracking-wide">{Bio.name}</span>
           </motion.h1>
           <motion.div
-            className="text-2xl mb-6 text-center lg:text-start md:text-4xl font-semibold flex gap-3 text-darkTheme-text_primary"
+            className="text-2xl mb-6 text-center lg:text-start md:text-4xl font-medium flex gap-3 text-darkTheme-text_primary tracking-wide"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}

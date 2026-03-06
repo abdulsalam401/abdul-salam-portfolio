@@ -1,6 +1,6 @@
-import profileImg from "../assets/my.png";
-import athenaShield from "./Athena-Shield.png";
-import passwordManager from "./Password-Manager.png";
+import profileImg from "../assets/my.webp";
+import athenaShield from "./Athena-Shield.webp";
+import passwordManager from "./Password-Manager.webp";
 // import votingImage from "./My-fyp-CMS-App.png";
 // import proshopClient from "./Client_SideGarments_Store.png";
 // import proshopAdmin from "./Admin-panel-Garments_Store.png";
@@ -180,15 +180,15 @@ export const education = [
 ];
 
 // Certification Imports
-import ccep from "./CCEP.png";
-import cyberSecurity from "./CyberSecurity.png";
-import ethicalHackingUdemy from "./Ethical_Hacking_udemy.jpg";
-import networkingBasics from "./Networking_Basics.png";
-import pythonDevUdemy from "./Python develp_udemy.jpg";
-import pythonEss2 from "./Python_Essential 2.png";
-import pythonEss1 from "./python_essentials 1.png";
-import softSkill from "./Soft_Skill_Training.png";
-import androidMalware from "./android_malware_analysis.jpg";
+import ccep from "./CCEP.webp";
+import cyberSecurity from "./CyberSecurity.webp";
+import ethicalHackingUdemy from "./Ethical_Hacking_udemy.webp";
+import networkingBasics from "./Networking_Basics.webp";
+import pythonDevUdemy from "./Python develp_udemy.webp";
+import pythonEss2 from "./Python_Essential 2.webp";
+import pythonEss1 from "./python_essentials 1.webp";
+import softSkill from "./Soft_Skill_Training.webp";
+import androidMalware from "./android_malware_analysis.webp";
 
 
 export const certifications = [
@@ -275,11 +275,11 @@ export const certifications = [
   },
 ];
 
-import quantImage from "./image.png";
-import crypticImage from "./image copy.png";
-import ttsImage from "./image copy 2.png";
+import quantImage from "./image.webp";
+import crypticImage from "./image copy.webp";
+import ttsImage from "./image copy 2.webp";
 
-import nidsImage from "./NIDS.png";
+import nidsImage from "./NIDS.webp";
 
 export const projects = [
   {

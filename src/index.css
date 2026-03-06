@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 @import "tailwindcss/base";
@@ -7,25 +7,31 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden; /* Prevent horizontal scrolling globally */
-  background-color: #0a0a0f; /* Match new dark deeper background */
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling globally */
+  background-color: #0a0a0f;
+  /* Match new dark deeper background */
   color: #f0f0f5;
 }
 
 body {
-  overflow-x: hidden; /* Additional safeguard for body overflows */
-  margin: 0; /* Reset default margins that could cause issues */
+  overflow-x: hidden;
+  /* Additional safeguard for body overflows */
+  margin: 0;
+  /* Reset default margins that could cause issues */
 }
 
 @layer base {
   html {
-    font-family: "Raleway", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
   }
 }
 
 @layer utilities {
   .glassmorphism {
-    @apply bg-opacity-10 backdrop-blur-lg border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+    @apply bg-opacity-10 backdrop-blur-lg;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     background: rgba(255, 255, 255, 0.03);
   }
 
@@ -37,12 +43,13 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   }
 
+  /* Softened the glows for better readability */
   .text-glow-cyan {
-    text-shadow: 0 0 10px rgba(0, 243, 255, 0.7), 0 0 20px rgba(0, 243, 255, 0.5);
+    text-shadow: 0 0 8px rgba(0, 243, 255, 0.6);
   }
 
   .text-glow-purple {
-    text-shadow: 0 0 10px rgba(188, 19, 254, 0.7), 0 0 20px rgba(188, 19, 254, 0.5);
+    text-shadow: 0 0 8px rgba(188, 19, 254, 0.6);
   }
 
   .border-glow-purple {
@@ -54,13 +61,16 @@ body {
   ::-webkit-scrollbar {
     width: 8px;
   }
+
   ::-webkit-scrollbar-track {
     background: #0a0a0f;
   }
+
   ::-webkit-scrollbar-thumb {
     background: rgba(188, 19, 254, 0.5);
     border-radius: 4px;
   }
+
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(188, 19, 254, 0.8);
   }
