@@ -28,13 +28,13 @@ const HeroSection = () => {
             <span className="text-neon-cyan text-glow-cyan font-bold tracking-wide">{Bio.name}</span>
           </motion.h1>
           <motion.div
-            className="text-2xl mb-6 text-center lg:text-start md:text-4xl font-medium flex gap-3 text-darkTheme-text_primary tracking-wide"
+            className="text-2xl mb-6 text-center lg:text-start md:text-4xl font-medium text-darkTheme-text_primary tracking-wide"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            I am a
-            <span className="text-neon-cyan cursor-pointer text-glow-cyan">
+            I am a{" "}
+            <span className="text-neon-cyan cursor-pointer text-glow-cyan inline-block">
               <Typewriter
                 options={{
                   strings: Bio.roles,
