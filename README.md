@@ -119,7 +119,7 @@ npm run preview
 > Add your deployed link here:
 
 ```txt
-https://your-portfolio-domain.com
+https://abdul-salam-portfolio.vercel.app/
 ```
 
 ---
