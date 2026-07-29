@@ -116,7 +116,6 @@ npm run preview
 
 ## 🌐 Live Demo
 
-> Add your deployed link here:
 
 ```txt
 https://abdul-salam-portfolio.vercel.app/
