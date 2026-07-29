@@ -23,13 +23,7 @@
 
 </div>
 
----
 
-## 📸 Preview
-
-![Portfolio Banner](src/assets/my2.webp)
-
----
 
 ## 🚀 Overview
 
