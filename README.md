@@ -134,10 +134,7 @@ I’m open to internships, collaborations, and cybersecurity research opportunit
 
 ---
 
-## 📄 License
 
-This project is open-source and available under the **MIT License**.  
-(If not already present, add a `LICENSE` file.)
 
 ---
 
