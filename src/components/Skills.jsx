@@ -1,4 +1,3 @@
-import React from "react";
 import { skills } from "../data/constants";
 import { motion } from "framer-motion";
 

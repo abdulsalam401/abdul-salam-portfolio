@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Snackbar } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import { Bio } from "../data/constants";
@@ -20,7 +20,7 @@ const Contact = () => {
         "UTTa2InzCgs-OvqbC"
       )
       .then(
-        (result) => {
+        () => {
           setOpen(true);
           form.current.reset();
         },

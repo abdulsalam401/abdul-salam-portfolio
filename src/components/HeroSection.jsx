@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import HeroImg from "../assets/my2.webp";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../data/constants";

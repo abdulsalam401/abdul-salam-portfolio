@@ -1,4 +1,5 @@
-import React from "react";
+
+import PropTypes from "prop-types";
 
 const Background = ({ children }) => {
     return (
@@ -29,3 +30,7 @@ const Background = ({ children }) => {
 };
 
 export default Background;
+
+Background.propTypes = {
+  children: PropTypes.node,
+};

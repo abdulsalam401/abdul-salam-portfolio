@@ -1,5 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
 const Avatar = ({ src }) => (
   <img
@@ -8,6 +8,10 @@ const Avatar = ({ src }) => (
     alt="Member Avatar"
   />
 );
+
+Avatar.propTypes = {
+  src: PropTypes.string,
+};
 
 const ProjectCard = ({ project, setOpenModal }) => {
   return (
@@ -58,3 +62,8 @@ const ProjectCard = ({ project, setOpenModal }) => {
 };
 
 export default ProjectCard;
+
+ProjectCard.propTypes = {
+  project: PropTypes.object,
+  setOpenModal: PropTypes.func,
+};

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
@@ -34,7 +34,7 @@ const App = () => {
         </section>
         <Wrapper>
           <section id="education">
-            <Education openModal={openModal} setOpenModal={setOpenModal} />
+            <Education setOpenModal={setOpenModal} />
           </section>
           <section id="contact">
             <Contact />

@@ -1,4 +1,3 @@
-import React from "react";
 import { education, certifications } from "../data/constants";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
@@ -8,8 +7,9 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import EducationCard from "./EducationCard";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
-const Education = ({ openModal, setOpenModal }) => {
+const Education = ({ setOpenModal }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -118,3 +118,7 @@ const Education = ({ openModal, setOpenModal }) => {
 };
 
 export default Education;
+
+Education.propTypes = {
+  setOpenModal: PropTypes.func,
+};

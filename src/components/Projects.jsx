@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { projects } from "../data/constants";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
 const Projects = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = useState("all");
@@ -86,3 +87,8 @@ const Projects = ({ openModal, setOpenModal }) => {
 };
 
 export default Projects;
+
+Projects.propTypes = {
+  openModal: PropTypes.object,
+  setOpenModal: PropTypes.func,
+};

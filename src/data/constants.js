@@ -161,8 +161,6 @@ export const skills = [
 
 ];
 
-export const experiences = [];
-
 export const education = [
   {
     id: 0,
@@ -375,12 +373,4 @@ export const projects = [
     github: "https://github.com/abdulsalam401",
     webapp: "#",
   },
-];
-
-export const TimeLineData = [
-  { year: 2021, text: "Started BS Computer Science" },
-  { year: 2022, text: "Learned Python & Networking Fundamentals" },
-  { year: 2023, text: "Explored Cryptography & Web Security" },
-  { year: 2024, text: "Focused on Ethical Hacking & Malware Analysis" },
-  { year: 2025, text: "Working on Cybersecurity FYP" },
 ];

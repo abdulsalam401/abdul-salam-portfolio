@@ -1,6 +1,6 @@
-import React from "react";
 import { CloseRounded } from "@mui/icons-material";
 import { Modal } from "@mui/material";
+import PropTypes from "prop-types";
 
 const CertificateDetails = ({ openModal, setOpenModal }) => {
     const certificate = openModal?.project;
@@ -59,3 +59,10 @@ const CertificateDetails = ({ openModal, setOpenModal }) => {
 };
 
 export default CertificateDetails;
+
+CertificateDetails.propTypes = {
+  openModal: PropTypes.shape({
+    project: PropTypes.object,
+  }),
+  setOpenModal: PropTypes.func,
+};

@@ -1,14 +1,18 @@
-import React from "react";
 import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
 import { Modal } from "@mui/material";
+import PropTypes from "prop-types";
 
 const MemberImage = ({ src }) => (
   <img
-    class="md:w-[50px] md:h-[50px] object-cover rounded-full mb-1 shadow-md w-[32px] h-[32px]"
+    className="md:w-[50px] md:h-[50px] object-cover rounded-full mb-1 shadow-md w-[32px] h-[32px]"
     src={src}
-    alt="memeber"
+    alt="member"
   />
 );
+
+MemberImage.propTypes = {
+  src: PropTypes.string,
+};
 const ProjectDetails = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
 
@@ -36,7 +40,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
       >
         {/* wrapper */}
         <div
-          class="max-w-[800px] w-full rounded-2xl my-[50px] mx-[12px] h-fit bg-darkTheme-card text-lightTheme-text_primary p-5 flex flex-col relative"
+          className="max-w-[800px] w-full rounded-2xl my-[50px] mx-[12px] h-fit bg-darkTheme-card text-lightTheme-text_primary p-5 flex flex-col relative"
           onClick={(e) => e.stopPropagation()}
         >
           <CloseRounded
@@ -61,8 +65,8 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
           </div>
           {/* tags */}
           <div className="flex flex-wrap my-1 md:my-2">
-            {project?.tags.map((tag) => (
-              <div className="text-[12px] font-normal text-darkTheme-text_primary m-1 py-1 px-2 rounded-lg bg-zinc-800 md:text-[14px]">
+            {project?.tags.map((tag, i) => (
+              <div key={i} className="text-[12px] font-normal text-darkTheme-text_primary m-1 py-1 px-2 rounded-lg bg-zinc-800 md:text-[14px]">
                 {tag}
               </div>
             ))}
@@ -77,11 +81,11 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
               </label>
               {/* memebers */}
               <div className="flex flex-col gap-1 flex-wrap m-1 md:m-3">
-                {project?.member.map((member) => (
+                {project?.member.map((member, i) => (
                   // member
-                  <div className="flex items-center gap-3">
+                  <div key={i} className="flex items-center gap-3">
                     <MemberImage src={member.img} />
-                    <div class="text-[14px] font-medium w-[200px] text-darkTheme-primary md:text-[16px]">
+                    <div className="text-[14px] font-medium w-[200px] text-darkTheme-primary md:text-[16px]">
                       {member.name}
                     </div>
                     <a
@@ -139,3 +143,10 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
 };
 
 export default ProjectDetails;
+
+ProjectDetails.propTypes = {
+  openModal: PropTypes.shape({
+    project: PropTypes.object,
+  }),
+  setOpenModal: PropTypes.func,
+};

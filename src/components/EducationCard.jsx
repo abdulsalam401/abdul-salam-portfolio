@@ -1,4 +1,5 @@
-import React from "react";
+
+import PropTypes from "prop-types";
 
 const EducationCard = ({ education, onClick }) => {
   return (
@@ -43,3 +44,8 @@ const EducationCard = ({ education, onClick }) => {
 };
 
 export default EducationCard;
+
+EducationCard.propTypes = {
+  education: PropTypes.object,
+  onClick: PropTypes.func,
+};

@@ -1,4 +1,5 @@
-import React from "react";
+
+import PropTypes from "prop-types";
 
 const Wrapper = ({ children }) => {
   const wrapperStyles = {
@@ -13,3 +14,7 @@ const Wrapper = ({ children }) => {
 };
 
 export default Wrapper;
+
+Wrapper.propTypes = {
+  children: PropTypes.node,
+};
