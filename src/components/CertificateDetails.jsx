@@ -11,9 +11,15 @@ const CertificateDetails = ({ openModal, setOpenModal }) => {
             onClose={() => setOpenModal({ state: false, project: null })}
         >
             {/* Container */}
-            <div className="w-full h-full absolute top-0 left-0 bg-[#000000a7] flex items-top justify-center overflow-y-scroll transition-all duration-500 ease-in-out">
+            <div
+                className="w-full h-full absolute top-0 left-0 bg-[#000000a7] flex items-top justify-center overflow-y-scroll transition-all duration-500 ease-in-out"
+                onClick={() => setOpenModal({ state: false, project: null })}
+            >
                 {/* wrapper */}
-                <div className="max-w-[800px] w-full rounded-2xl my-[50px] mx-[12px] h-fit bg-darkTheme-card text-lightTheme-text_primary p-5 flex flex-col relative">
+                <div
+                    className="max-w-[800px] w-full rounded-2xl my-[50px] mx-[12px] h-fit bg-darkTheme-card text-lightTheme-text_primary p-5 flex flex-col relative"
+                    onClick={(e) => e.stopPropagation()}
+                >
                     <CloseRounded
                         style={{
                             position: "absolute",
