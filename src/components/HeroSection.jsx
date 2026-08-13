@@ -136,7 +136,7 @@ const HeroSection = () => {
               href={Bio.resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto text-center font-mono font-semibold text-sm uppercase tracking-widest py-3 px-8 rounded-full bg-gradient-to-r from-neon-purple to-neon-cyan text-white shadow-[0_0_20px_rgba(188,19,254,0.5)] hover:shadow-[0_0_35px_rgba(0,243,255,0.6)] transition-all duration-300"
+              className="w-full sm:w-auto text-center font-mono font-semibold text-sm uppercase tracking-widest py-3 px-8 rounded-full border border-neon-purple/50 text-neon-purple hover:bg-neon-purple/10 hover:shadow-[0_0_20px_rgba(188,19,254,0.4)] transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
