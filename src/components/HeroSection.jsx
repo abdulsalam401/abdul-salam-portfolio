@@ -84,14 +84,23 @@ const HeroSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
+          <motion.span
+            className="font-mono text-sm sm:text-base uppercase tracking-[0.3em] text-neon-cyan mb-3"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            $ whoami
+          </motion.span>
+
           <motion.h1
-            className="font-semibold text-center text-5xl md:text-6xl lg:text-start text-white mb-4 text-glow-purple tracking-normal leading-tight"
+            className="font-semibold text-center text-5xl md:text-6xl lg:text-start text-white mb-4 tracking-normal leading-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             Hi, I am <br />
-            <span className="text-neon-cyan text-glow-cyan font-bold tracking-wide">{Bio.name}</span>
+            <span className="text-neon-cyan font-bold tracking-wide">{Bio.name}</span>
           </motion.h1>
           <motion.div
             className="text-2xl mb-6 text-center lg:text-start md:text-4xl font-medium text-darkTheme-text_primary tracking-wide"
@@ -118,7 +127,7 @@ const HeroSection = () => {
             href={Bio.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="block max-w-80 self-center lg:self-start bg-transparent font-bold text-lg py-3 px-8 rounded-full border border-neon-purple text-white shadow-[0_0_15px_rgba(188,19,254,0.4)] hover:shadow-[0_0_30px_rgba(188,19,254,0.8)] hover:bg-neon-purple/10 transition-all duration-300"
+            className="block max-w-80 self-center lg:self-start font-mono font-semibold text-sm uppercase tracking-widest py-3 px-8 rounded-full bg-gradient-to-r from-neon-purple to-neon-cyan text-white shadow-[0_0_20px_rgba(188,19,254,0.5)] hover:shadow-[0_0_35px_rgba(0,243,255,0.6)] transition-all duration-300"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}

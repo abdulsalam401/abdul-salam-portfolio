@@ -32,6 +32,9 @@ const Contact = () => {
   return (
     <div className="flex flex-col justify-center relative  items-center padding-0px">
       <div className="relative flex justify-between items-center flex-col w-full max-w-[1350px] pb-20 gap-3 ">
+        <span className="font-mono text-sm md:text-base uppercase tracking-[0.35em] text-neon-cyan">
+          // 04. contact
+        </span>
         <div className="text-[32px] text-center font-semibold mt-5 md:mt-3 md:text-[42px] text-darkTheme-text_primary">
           Contact
         </div>

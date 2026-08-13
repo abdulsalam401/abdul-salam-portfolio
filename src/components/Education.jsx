@@ -25,6 +25,16 @@ const Education = ({ setOpenModal }) => {
     <div id="education" className="flex flex-col justify-center items-center relative z-1 pb-10 px-0 md:pb-[80px]">
       <div className="flex flex-col justify-between items-center w-full max-w-[1350px] pt-10 gap-3">
 
+        <motion.span
+          className="font-mono text-sm md:text-base uppercase tracking-[0.35em] text-neon-purple mb-2"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          // 03. education
+        </motion.span>
+
         <motion.h1
           className="text-[35px] text-center font-bold mt-3 md:mt-10 md:text-[45px] text-white text-glow-purple"
           initial={{ opacity: 0, y: -20 }}
@@ -59,6 +69,16 @@ const Education = ({ setOpenModal }) => {
 
         {certifications && certifications.length > 0 && (
           <div className="flex flex-col justify-between items-center w-full max-w-[1350px] pt-20 gap-3">
+            <motion.span
+              className="font-mono text-sm md:text-base uppercase tracking-[0.35em] text-neon-cyan mb-2"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              // 03.1 certifications
+            </motion.span>
+
             <motion.h1
               className="text-[35px] text-center font-bold mt-3 md:mt-5 md:text-[45px] text-white text-glow-cyan"
               initial={{ opacity: 0, y: -20 }}

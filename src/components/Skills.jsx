@@ -24,6 +24,16 @@ const Skills = () => {
     <div id="skills" className="flex flex-col items-center justify-center z-10 relative py-10">
       <div className="flex flex-col items-center justify-between w-full max-w-7xl relative gap-3 px-4">
 
+        <motion.span
+          className="font-mono text-sm md:text-base uppercase tracking-[0.35em] text-neon-cyan mb-2"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          // 01. skills
+        </motion.span>
+
         <motion.h1
           className="mt-3 text-white text-3xl md:mt-5 font-bold items-center md:text-[45px] text-glow-purple tracking-wide"
           initial={{ opacity: 0, y: -20 }}

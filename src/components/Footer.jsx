@@ -11,13 +11,9 @@ const Footer = () => {
     <div className="w-full py-[24px] flex justify-center">
       {/* wrapper */}
       <div className="w-full max-w-[1200px] flex flex-col gap-[14px] items-center p-[16px] text-darkTheme-text_primary">
-        <div className="flex gap-3">
-          <h1 className=" font-bold text-[27px] md:text-[24px] text-darkTheme-primary font-signature">
-            Abdul
-          </h1>
-          <h1 className=" font-bold text-[27px] md:text-[24px] text-darkTheme-primary font-signature">
-            Salam
-          </h1>
+        <div className="flex items-center gap-2 font-mono font-semibold tracking-widest text-[20px] text-darkTheme-primary">
+          <span className="w-2 h-2 rounded-full bg-neon-cyan shadow-[0_0_10px_#00f3ff]"></span>
+          ~/abdul-salam
         </div>
         <nav className="w-full max-w-[800px] flex flex-row flex-wrap gap-[18px] justify-center mt-[4px]">
           <a

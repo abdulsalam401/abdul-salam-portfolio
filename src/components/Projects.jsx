@@ -31,6 +31,16 @@ const Projects = ({ setOpenModal }) => {
     <div id="projects" className="relative z-1 p-2 flex flex-col justify-center items-center">
       <div className="relative flex justify-between items-center flex-col w-full max-w-[1350px] p-[10px] pb-[100px] gap-3">
 
+        <motion.span
+          className="font-mono text-sm md:text-base uppercase tracking-[0.35em] text-neon-cyan mb-2"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          // 02. projects
+        </motion.span>
+
         <motion.h2
           className="md:text-[45px] text-center font-bold text-white md:mt-10 mt-5 text-[35px] text-glow-purple"
           initial={{ opacity: 0, y: -20 }}

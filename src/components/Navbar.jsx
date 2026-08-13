@@ -18,8 +18,12 @@ const Navbar = () => {
     >
       <div className="flex max-w-7xl mx-auto justify-between items-center w-full h-16 text-white glassmorphism px-6 sm:px-8 rounded-full border border-neon-purple/30 shadow-[0_0_15px_rgba(188,19,254,0.2)]">
         <div>
-          <a className="text-3xl md:text-4xl font-signature text-white text-glow-purple" href="#home">
-            Abdul Salam
+          <a
+            className="flex items-center gap-2 text-white font-mono font-semibold tracking-widest text-lg md:text-xl hover:text-neon-cyan transition-colors duration-300"
+            href="#home"
+          >
+            <span className="w-2 h-2 rounded-full bg-neon-cyan shadow-[0_0_10px_#00f3ff]"></span>
+            <span className="text-neon-cyan">~/</span>abdul-salam
           </a>
         </div>
         <ul className="hidden md:flex space-x-6">

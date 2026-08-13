@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
 
 @import "tailwindcss";
 
 @theme {
   /* Fonts */
   --font-sans: "Space Grotesk", sans-serif;
-  --font-signature: "Great Vibes", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Display heading size for hero/section titles */
+  --font-display: "Space Grotesk", sans-serif;
 
   /* 2026 Neon Theme Colors */
   --color-neon-cyan: #00f3ff;
