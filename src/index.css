@@ -21,6 +21,12 @@ body {
   /* Reset default margins that could cause issues */
 }
 
+/* Offset anchored sections so the fixed navbar doesn't cover headings */
+section[id],
+div[id] {
+  scroll-margin-top: 90px;
+}
+
 @layer base {
   html {
     font-family: "Space Grotesk", sans-serif;
