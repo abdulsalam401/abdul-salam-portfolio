@@ -79,32 +79,36 @@ const Education = ({ openModal, setOpenModal }) => {
               Certifications
             </motion.h1>
             <motion.div
-              className="w-full max-w-[1000px] mt-[10px] flex flex-col items-end justify-center gap-3 sm:items-center"
+              className="w-full mt-[10px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
               variants={containerVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
             >
-              <Timeline>
-                {certifications.map((cert, index) => (
-                  <TimelineItem key={index}>
-                    <TimelineSeparator>
-                      <TimelineDot variant="outlined" color="primary" sx={{ borderColor: '#00f3ff', borderWidth: 2 }} />
-                      {index !== certifications.length - 1 && (
-                        <TimelineConnector sx={{ background: "linear-gradient(to bottom, #00f3ff, rgba(0,243,255,0))", width: '2px' }} />
-                      )}
-                    </TimelineSeparator>
-                    <TimelineContent sx={{ py: "12px", px: 2 }}>
-                      <motion.div variants={itemVariants}>
-                        <EducationCard
-                          education={cert}
-                          onClick={() => setOpenModal({ state: true, project: cert, type: "certificate" })}
-                        />
-                      </motion.div>
-                    </TimelineContent>
-                  </TimelineItem>
-                ))}
-              </Timeline>
+              {certifications.map((cert, index) => (
+                <motion.div key={index} variants={itemVariants} className="h-full">
+                  <div
+                    onClick={() => setOpenModal({ state: true, project: cert, type: "certificate" })}
+                    className="group relative rounded-2xl overflow-hidden glassmorphism-card border border-neon-cyan/30 cursor-pointer shadow-lg transition-all duration-300 hover:shadow-[0_0_25px_rgba(0,243,255,0.35)] hover:-translate-y-2"
+                  >
+                    <img
+                      src={cert.img}
+                      alt={`${cert.degree} certificate`}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-[180px] sm:h-[220px] object-cover bg-white transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="relative flex flex-col justify-end p-3 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+                      <div className="text-[13px] sm:text-[14px] font-bold text-white group-hover:text-neon-cyan">
+                        {cert.degree}
+                      </div>
+                      <div className="text-[11px] sm:text-[12px] font-medium text-gray-300 mt-1">
+                        {cert.school} • {cert.date}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
             </motion.div>
           </div>
         )}

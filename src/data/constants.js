@@ -34,7 +34,7 @@ export const skills = [
     skills: [
       {
         name: "Python",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       },
 
       {
@@ -47,20 +47,19 @@ export const skills = [
       },
       {
         name: "HTML",
-        image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       },
       {
         name: "CSS",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
       },
       {
         name: "JavaScript",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       },
       {
         name: "Machine Learning",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/260px-Scikit_learn_logo_small.svg.png",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg",
       },
     ],
   },
@@ -114,11 +113,11 @@ export const skills = [
       },
       {
         name: "Node.js",
-        image: "https://nodejs.org/static/images/logo.svg",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       },
       {
         name: "Express.js",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
       },
       {
         name: "Chrome Extensions",
@@ -131,7 +130,7 @@ export const skills = [
     skills: [
       {
         name: "Linux",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
       },
       {
         name: "Git",
@@ -155,7 +154,7 @@ export const skills = [
       },
       {
         name: "Docker",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
       },
     ],
   },
@@ -190,6 +189,7 @@ import pythonEss1 from "./python_essentials 1.webp";
 import softSkill from "./Soft_Skill_Training.webp";
 import androidMalware from "./android_malware_analysis.webp";
 import ethicalHackerCisco from "./Ethical Hacking.webp";
+import tryHackMe from "./tryhacke.png";
 
 
 export const certifications = [
@@ -282,6 +282,15 @@ export const certifications = [
     desc: "Professional certification from RED TEAM LEADERS.",
     img: ccep,
     grade: "Professional",
+  },
+  {
+    id: 10,
+    school: "TryHackMe",
+    date: "2026",
+    degree: "TryHackMe Certificate",
+    desc: "Hands-on cybersecurity training through TryHackMe, covering practical challenges and walkthroughs.",
+    img: tryHackMe,
+    grade: "Certificate",
   },
 ];
 
