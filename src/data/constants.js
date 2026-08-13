@@ -1,12 +1,5 @@
 import athenaShield from "./Athena-Shield.webp";
 import passwordManager from "./Password-Manager.webp";
-// import votingImage from "./My-fyp-CMS-App.png";
-// import proshopClient from "./Client_SideGarments_Store.png";
-// import proshopAdmin from "./Admin-panel-Garments_Store.png";
-// import portfolio from "./portfolio-project.png";
-// import backendImage from "./Backend_Developer.png";
-// import khanBrothersClient from "./Khan Brothers Engineering and Solutions – Client-Side.png";
-// import khanBrothersAdmin from "./Khan Brothers Engineering and Solutions – Admin Panel.png";
 
 export const Bio = {
   name: "Abdul Salam",
@@ -292,9 +285,9 @@ export const certifications = [
   },
 ];
 
-import quantImage from "./image.webp";
-import crypticImage from "./image copy.webp";
-import ttsImage from "./image copy 2.webp";
+import quantImage from "./quantum-resilient.webp";
+import crypticImage from "./cryptic.webp";
+import ttsImage from "./tts-converter.webp";
 
 import nidsImage from "./NIDS.webp";
 
