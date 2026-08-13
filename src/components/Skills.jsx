@@ -1,5 +1,5 @@
 import { skills } from "../data/constants";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const Skills = () => {
   const containerVariants = {

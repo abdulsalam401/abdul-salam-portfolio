@@ -1,24 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-signature: "Great Vibes", sans-serif;
+
+  /* 2026 Neon Theme Colors */
+  --color-neon-cyan: #00f3ff;
+  --color-neon-purple: #bc13fe;
+  --color-neon-pink: #ff007f;
+  --color-neon-blue: #0055ff;
+
+  --color-darkTheme-bg: #0a0a0f;
+  --color-darkTheme-bgLight: #12121c;
+  --color-darkTheme-primary: #bc13fe;
+  --color-darkTheme-text_primary: #f0f0f5;
+  --color-darkTheme-text_secondary: #a0a0b0;
+  --color-darkTheme-card: rgba(23, 23, 33, 0.4);
+  --color-darkTheme-card_light: rgba(25, 25, 36, 0.5);
+  --color-darkTheme-button: #854ce6;
+  --color-darkTheme-white: #ffffff;
+  --color-darkTheme-black: #000000;
+
+  --color-lightTheme-bg: #ffffff;
+  --color-lightTheme-bgLight: #f0f0f0;
+  --color-lightTheme-primary: #bc13fe;
+  --color-lightTheme-text_primary: #111111;
+  --color-lightTheme-text_secondary: #48494a;
+  --color-lightTheme-card: #ffffff;
+  --color-lightTheme-button: #5c5b5b;
+
+  /* Legacy palette kept for compatibility */
+  --color-primary1: #854ce6;
+  --color-background1: #222a35;
+  --color-background2: #19212c;
+  --color-text: #c8cfd8;
+  --color-text1: #f2f5f7;
+  --color-text2: #626970;
+  --color-text3: #575c66;
+  --color-footerBackground: #00012b;
+
+  /* Animations */
+  --animate-spin-slow: spin 8s linear infinite;
+  --animate-blob: blob 7s infinite;
+  --animate-floating: floating 3s ease-in-out infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+
+  @keyframes floating {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
 
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  /* Prevent horizontal scrolling globally */
   background-color: #0a0a0f;
-  /* Match new dark deeper background */
   color: #f0f0f5;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 body {
   overflow-x: hidden;
-  /* Additional safeguard for body overflows */
   margin: 0;
-  /* Reset default margins that could cause issues */
 }
 
 /* Offset anchored sections so the fixed navbar doesn't cover headings */
@@ -27,18 +94,13 @@ div[id] {
   scroll-margin-top: 90px;
 }
 
-@layer base {
-  html {
-    font-family: "Space Grotesk", sans-serif;
-  }
-}
-
 @layer utilities {
   .glassmorphism {
-    @apply bg-opacity-10 backdrop-blur-lg;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
   }
 
   .glassmorphism-card {
@@ -86,7 +148,6 @@ div[id] {
    animations for visitors who ask for less motion (also cheaper on low-end
    devices, since the blurred orbs stop repainting). */
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {

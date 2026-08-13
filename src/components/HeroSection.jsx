@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import HeroImg from "../assets/my2.webp";
 import { Bio } from "../data/constants";
-import { motion, useInView, useReducedMotion } from "framer-motion";
+import { motion, useInView, useReducedMotion } from "motion/react";
 
 const MORPH = [
   "60% 40% 30% 70% / 60% 30% 70% 40%",

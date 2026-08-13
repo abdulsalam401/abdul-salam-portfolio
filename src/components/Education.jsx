@@ -1,6 +1,6 @@
 import { education, certifications } from "../data/constants";
 import EducationCard from "./EducationCard";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import PropTypes from "prop-types";
 
 const Education = ({ setOpenModal }) => {

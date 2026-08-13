@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { projects } from "../data/constants";
 import ProjectCard from "./ProjectCard";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import PropTypes from "prop-types";
 
 const Projects = ({ setOpenModal }) => {

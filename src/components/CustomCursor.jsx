@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 
 const SPRING_CONFIG = { damping: 30, stiffness: 400, mass: 0.4 };
 
