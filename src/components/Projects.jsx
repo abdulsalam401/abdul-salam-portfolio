@@ -4,8 +4,9 @@ import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
-const Projects = ({ openModal, setOpenModal }) => {
+const Projects = ({ setOpenModal }) => {
   const [toggle, setToggle] = useState("all");
+  const categories = ["all", ...new Set(projects.map((p) => p.category))];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -48,11 +49,11 @@ const Projects = ({ openModal, setOpenModal }) => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          {["All", "cybersecurity"].map((cat) => (
+          {categories.map((cat) => (
             <div
               key={cat}
-              onClick={() => setToggle(cat.toLowerCase())}
-              className={`py-[8px] px-[16px] md:py-3 md:px-8 cursor-pointer transition-all duration-300 uppercase tracking-wider text-sm ${toggle === cat.toLowerCase()
+              onClick={() => setToggle(cat)}
+              className={`py-[8px] px-[16px] md:py-3 md:px-8 cursor-pointer transition-all duration-300 uppercase tracking-wider text-sm ${toggle === cat
                   ? "bg-neon-purple/30 text-neon-cyan shadow-[inset_0_0_15px_rgba(188,19,254,0.4)]"
                   : "hover:bg-white/5"
                 }`}
@@ -89,6 +90,5 @@ const Projects = ({ openModal, setOpenModal }) => {
 export default Projects;
 
 Projects.propTypes = {
-  openModal: PropTypes.object,
   setOpenModal: PropTypes.func,
 };

@@ -320,7 +320,7 @@ export const projects = [
     image: quantImage,
     tags: ["Python", "Cryptography", "LibOQS", "Kyber and RSA", "Django", "Algorithms", "OpenQuantumSafe"],
     category: "cybersecurity",
-    github: "#",
+    github: null,
     webapp: "https://quantum-gem-fyp-bscs.vercel.app/",
   },
   {
@@ -333,7 +333,7 @@ export const projects = [
     tags: ["Python", "Machine Learning", "Honeypots", "Behavioral Biometrics", "Browser Fingerprinting", "Docker"],
     category: "cybersecurity",
     github: "https://github.com/abdulsalam401/Athena-Shield",
-    webapp: "#",
+    webapp: null,
   },
   {
     id: 2,
@@ -357,7 +357,7 @@ export const projects = [
     tags: ["Python", "Cryptography", "Chrome Extension", "AES-256", "PBKDF2", "Native Messaging"],
     category: "cybersecurity",
     github: "https://github.com/abdulsalam401/Password-Manager-Chrome-Extension",
-    webapp: "#",
+    webapp: null,
   },
 
 
@@ -371,6 +371,6 @@ export const projects = [
     tags: ["Python", "Text-to-Speech (TTS)", "Automation"],
     category: "Python",
     github: "https://github.com/abdulsalam401",
-    webapp: "#",
+    webapp: null,
   },
 ];

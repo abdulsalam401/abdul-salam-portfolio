@@ -30,7 +30,7 @@ const App = () => {
 
         </Wrapper>
         <section id="projects">
-          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <Projects setOpenModal={setOpenModal} />
         </section>
         <Wrapper>
           <section id="education">

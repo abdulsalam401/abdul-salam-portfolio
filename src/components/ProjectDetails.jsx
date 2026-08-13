@@ -60,7 +60,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
           <h1 className="text-[24px] font-semibold text-darkTheme-text_primary  my-[6px] mb-0  md:text-[28px] md:my-[7px]">
             {project?.title}
           </h1>
-          <div className="md:text-[16x] my-[2px] mx-[6px] font-normal text-lightTheme-text_secondary text-[12px]">
+          <div className="md:text-[16px] my-[2px] mx-[6px] font-normal text-lightTheme-text_secondary text-[12px]">
             {project.date}
           </div>
           {/* tags */}
