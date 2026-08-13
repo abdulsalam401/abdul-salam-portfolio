@@ -1,6 +1,5 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import HeroImg from "../assets/my2.webp";
-import Typewriter from "typewriter-effect";
 import { Bio } from "../data/constants";
 import { motion, useInView, useReducedMotion } from "framer-motion";
 
@@ -9,6 +8,60 @@ const MORPH = [
   "30% 70% 70% 30% / 50% 60% 30% 60%",
   "60% 40% 30% 70% / 60% 30% 70% 40%",
 ];
+
+const useTypewriter = (words, { typeSpeed = 60, deleteSpeed = 30, pause = 1200 } = {}) => {
+  const [text, setText] = useState("");
+  const reduceMotion = useReducedMotion();
+
+  useEffect(() => {
+    if (reduceMotion) {
+      setText(words[0]);
+      return;
+    }
+    let wordIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+    let timer;
+
+    const tick = () => {
+      const word = words[wordIndex];
+      if (deleting) {
+        charIndex -= 1;
+        setText(word.slice(0, charIndex));
+        if (charIndex === 0) {
+          deleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          timer = setTimeout(tick, 300);
+          return;
+        }
+        timer = setTimeout(tick, deleteSpeed);
+      } else {
+        charIndex += 1;
+        setText(word.slice(0, charIndex));
+        if (charIndex === word.length) {
+          deleting = true;
+          timer = setTimeout(tick, pause);
+          return;
+        }
+        timer = setTimeout(tick, typeSpeed);
+      }
+    };
+
+    timer = setTimeout(tick, 300);
+    return () => clearTimeout(timer);
+  }, [words, typeSpeed, deleteSpeed, pause, reduceMotion]);
+
+  return text;
+};
+
+const Typewriter = ({ strings }) => {
+  const text = useTypewriter(strings);
+  return (
+    <span className="after:content-['|'] after:animate-pulse after:ml-0.5 after:text-neon-cyan">
+      {text}
+    </span>
+  );
+};
 
 const HeroSection = () => {
   const shapeRef = useRef(null);
@@ -48,15 +101,7 @@ const HeroSection = () => {
           >
             I am a{" "}
             <span className="text-neon-cyan cursor-pointer text-glow-cyan inline-block">
-              <Typewriter
-                options={{
-                  strings: Bio.roles,
-                  autoStart: true,
-                  loop: true,
-                  delay: 30,
-                  deleteSpeed: "natural",
-                }}
-              />
+              <Typewriter strings={Bio.roles} />
             </span>
           </motion.div>
 

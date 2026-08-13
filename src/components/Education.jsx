@@ -1,10 +1,4 @@
 import { education, certifications } from "../data/constants";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
 import EducationCard from "./EducationCard";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
@@ -42,29 +36,25 @@ const Education = ({ setOpenModal }) => {
         </motion.h1>
 
         <motion.div
-          className="w-full max-w-[1000px] mt-[10px] flex flex-col items-end justify-center gap-3 sm:items-center"
+          className="w-full max-w-[1000px] mt-[10px] flex flex-col items-center justify-center gap-3"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <Timeline>
+          <ol className="relative w-full border-l-2 border-neon-purple/40 pl-6 flex flex-col gap-8">
             {education.map((edu, index) => (
-              <TimelineItem key={index}>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="secondary" sx={{ borderColor: '#bc13fe', borderWidth: 2 }} />
-                  {index !== education.length - 1 && (
-                    <TimelineConnector sx={{ background: "linear-gradient(to bottom, #bc13fe, rgba(188,19,254,0))", width: '2px' }} />
-                  )}
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <motion.div variants={itemVariants}>
-                    <EducationCard education={edu} />
-                  </motion.div>
-                </TimelineContent>
-              </TimelineItem>
+              <li key={index} className="relative">
+                <span
+                  className="absolute -left-[31px] top-6 w-4 h-4 rounded-full border-2 border-neon-purple bg-darkTheme-bg shadow-[0_0_12px_rgba(188,19,254,0.6)]"
+                  aria-hidden="true"
+                ></span>
+                <motion.div variants={itemVariants}>
+                  <EducationCard education={edu} />
+                </motion.div>
+              </li>
             ))}
-          </Timeline>
+          </ol>
         </motion.div>
 
         {certifications && certifications.length > 0 && (
