@@ -76,7 +76,6 @@ const Projects = ({ setOpenModal }) => {
               <motion.div key={index} variants={childVariants}>
                 <ProjectCard
                   project={project}
-                  openModal={openModal}
                   setOpenModal={setOpenModal}
                 />
               </motion.div>

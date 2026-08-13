@@ -168,7 +168,7 @@ const HeroSection = () => {
               alt="Abdul Salam, cybersecurity and ethical hacking student"
               width="420"
               height="420"
-              fetchpriority="high"
+              fetchPriority="high"
               decoding="async"
               className="relative object-cover w-full h-full border border-white/20 shadow-[inset_0_0_20px_rgba(255,255,255,0.2)]"
               style={{ borderRadius: MORPH[0] }}
