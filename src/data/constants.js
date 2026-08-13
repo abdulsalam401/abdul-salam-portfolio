@@ -1,4 +1,3 @@
-import profileImg from "../assets/my.webp";
 import athenaShield from "./Athena-Shield.webp";
 import passwordManager from "./Password-Manager.webp";
 // import votingImage from "./My-fyp-CMS-App.png";
@@ -23,6 +22,7 @@ export const Bio = {
   resume: "https://drive.google.com/file/d/1wG_Awyyj5p9wvtPq7osdK4n0S7s6XZWb/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/abdul-salam-39467a274",
   twitter: "https://x.com/abdulsalamyt72",
+  tryhackme: "https://tryhackme.com/p/Abdulsalam1133",
   insta: "https://www.instagram.com/abdul.salam23",
   facebook: "https://www.facebook.com/share/184xMT836K/",
   email: "abdulsalam.cyber1@gmail.com",
@@ -189,11 +189,21 @@ import pythonEss2 from "./Python_Essential 2.webp";
 import pythonEss1 from "./python_essentials 1.webp";
 import softSkill from "./Soft_Skill_Training.webp";
 import androidMalware from "./android_malware_analysis.webp";
+import ethicalHackerCisco from "./Ethical Hacking.webp";
 
 
 export const certifications = [
   {
     id: 0,
+    school: "Cisco Networking Academy",
+    date: "30/07/2026",
+    degree: "Ethical Hacker",
+    desc: "Completed the Cisco Networking Academy Ethical Hacker course, covering reconnaissance, vulnerability scanning and assessment, exploitation techniques, social engineering, and reporting within legal and ethical engagement boundaries.",
+    img: ethicalHackerCisco,
+    grade: "Credential",
+  },
+  {
+    id: 1,
     school: "Cisco Networking Academy",
     date: "21/07/2025",
     degree: "Introduction to Cybersecurity",
@@ -202,7 +212,7 @@ export const certifications = [
     grade: "Credential",
   },
   {
-    id: 1,
+    id: 2,
     school: "Cisco Networking Academy",
     date: "22/07/2025",
     degree: "Networking Basics",
@@ -211,7 +221,7 @@ export const certifications = [
     grade: "Credential",
   },
   {
-    id: 2,
+    id: 3,
     school: "Cisco Networking Academy",
     date: "24/07/2025",
     degree: "Python Essentials 1",
@@ -220,7 +230,7 @@ export const certifications = [
     grade: "Credential",
   },
   {
-    id: 3,
+    id: 4,
     school: "Cisco Networking Academy",
     date: "25/10/2025",
     degree: "Python Essentials 2",
@@ -229,7 +239,7 @@ export const certifications = [
     grade: "Credential",
   },
   {
-    id: 4,
+    id: 5,
     school: "Udemy",
     date: "27/07/2024",
     degree: "Python Development & Data Science",
@@ -238,7 +248,7 @@ export const certifications = [
     grade: "Certificate",
   },
   {
-    id: 5,
+    id: 6,
     school: "Udemy",
     date: "25/07/2024",
     degree: "Ethical Hacking: Hacker Methodology",
@@ -247,7 +257,7 @@ export const certifications = [
     grade: "Certificate",
   },
   {
-    id: 6,
+    id: 7,
     school: "Udemy",
     date: "25/07/2024",
     degree: "Android Malware Analysis",
@@ -256,7 +266,7 @@ export const certifications = [
     grade: "Certificate",
   },
   {
-    id: 7,
+    id: 8,
     school: "OEC and ICMPD",
     date: "29/11/2025",
     degree: "Soft Skill Training",
@@ -265,7 +275,7 @@ export const certifications = [
     grade: "Certificate",
   },
   {
-    id: 8,
+    id: 9,
     school: "RED TEAM LEADERS",
     date: "14/12/2025",
     degree: "Certified Cybersecurity Educator Professional (CCEP)",

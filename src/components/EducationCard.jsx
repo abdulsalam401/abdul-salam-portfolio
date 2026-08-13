@@ -11,7 +11,9 @@ const EducationCard = ({ education, onClick }) => {
         <img
           src={education.img}
           className="md:h-[60px] h-[50px] w-auto bg-white/90 p-1 rounded-xl object-contain shadow-inner"
-          alt="School logo"
+          alt={`${education.school} logo`}
+          loading="lazy"
+          decoding="async"
         />
         <div className="w-full flex flex-col justify-center">
           <div className="md:text-[20px] text-[16px] font-bold text-white group-hover:text-neon-cyan transition-colors">

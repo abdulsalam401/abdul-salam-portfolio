@@ -19,6 +19,9 @@ const ProjectCard = ({ project, setOpenModal }) => {
       <div className="relative overflow-hidden rounded-xl h-[180px] w-full">
         <img
           src={project.image}
+          alt={`${project.title} project screenshot`}
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-neon-purple/30 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

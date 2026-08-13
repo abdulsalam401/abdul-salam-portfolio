@@ -22,7 +22,9 @@ const Experience = () => {
         </h1>
 
         <p className="mt-3 text-[16px] md:text-[18px] text-center max-w-[600px] text-darkTheme-text_secondary">
-          My journey as a Junior Data Analyst and MERN Stack developer reflects my commitment to continuous learning, problem-solving, and building practical, real-world solutions.
+          My hands-on cybersecurity experience spans ethical hacking practice, network
+          security and malware analysis, reflecting my commitment to continuous learning,
+          problem-solving, and building practical, real-world secure systems.
         </p>
 
         {/* Timeline section */}

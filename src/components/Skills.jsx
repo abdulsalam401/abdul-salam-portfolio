@@ -72,6 +72,10 @@ const Skills = () => {
                       src={item.image}
                       alt={item.name}
                       className="w-6 h-6 object-contain"
+                      loading="lazy"
+                      decoding="async"
+                      width="24"
+                      height="24"
                     />
                     {item.name}
                   </div>

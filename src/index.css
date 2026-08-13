@@ -75,3 +75,18 @@ body {
     background: rgba(188, 19, 254, 0.8);
   }
 }
+
+/* Respect the OS "reduce motion" setting: kills the looping blob/glow
+   animations for visitors who ask for less motion (also cheaper on low-end
+   devices, since the blurred orbs stop repainting). */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
