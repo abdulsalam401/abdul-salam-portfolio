@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔐 Abdul Salam — Cybersecurity Portfolio
+<h1>🔐 Abdul Salam — Cybersecurity Portfolio</h1>
 
 <p>
   <b>Cybersecurity Enthusiast • Python Developer • Secure Systems Builder</b>
@@ -131,12 +131,6 @@ I’m open to internships, collaborations, and cybersecurity research opportunit
 - **LinkedIn:** [Abdul Salam](https://www.linkedin.com/in/abdul-salam-39467a274)
 - **GitHub:** [abdulsalam401](https://github.com/abdulsalam401)
 - **Resume:** [View Resume](https://drive.google.com/file/d/1Moxci3Sg80XWBciSe0UaA6aY3RfEQxod/view?usp=sharing)
-
----
-
-
-
----
 
 <div align="center">
   <sub>© 2026 Abdul Salam — Built with passion for secure and meaningful technology.</sub>
