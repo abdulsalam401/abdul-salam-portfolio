@@ -38,7 +38,7 @@ const Projects = ({ setOpenModal }) => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          // 02. projects
+          {"// 02. projects"}
         </motion.span>
 
         <motion.h2

@@ -54,6 +54,8 @@ const useTypewriter = (words, { typeSpeed = 60, deleteSpeed = 30, pause = 1200 }
   return text;
 };
 
+import PropTypes from "prop-types";
+
 const Typewriter = ({ strings }) => {
   const text = useTypewriter(strings);
   return (
@@ -61,6 +63,10 @@ const Typewriter = ({ strings }) => {
       {text}
     </span>
   );
+};
+
+Typewriter.propTypes = {
+  strings: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 const HeroSection = () => {

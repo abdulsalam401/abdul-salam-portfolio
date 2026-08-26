@@ -31,7 +31,7 @@ const Skills = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          // 01. skills
+          {"// 01. skills"}
         </motion.span>
 
         <motion.h1
