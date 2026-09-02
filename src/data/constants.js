@@ -16,6 +16,7 @@ export const Bio = {
   linkedin: "https://www.linkedin.com/in/abdul-salam-39467a274",
   twitter: "https://x.com/abdulsalamyt72",
   tryhackme: "https://tryhackme.com/p/Abdulsalam1133",
+  hackthebox: "https://app.hackthebox.com/public/users/3016111",
   insta: "https://www.instagram.com/abdul.salam23",
   facebook: "https://www.facebook.com/share/184xMT836K/",
   email: "abdulsalam.cyber1@gmail.com",

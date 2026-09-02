@@ -2,6 +2,8 @@ import { useRef, useState, useEffect } from "react";
 import HeroImg from "../assets/my2.webp";
 import { Bio } from "../data/constants";
 import { motion, useInView, useReducedMotion } from "motion/react";
+import { GitHub, LinkedIn } from "@mui/icons-material";
+import { SiTryhackme, SiHackthebox } from "react-icons/si";
 
 const MORPH = [
   "60% 40% 30% 70% / 60% 30% 70% 40%",
@@ -156,6 +158,58 @@ const HeroSection = () => {
             >
               View Projects
             </motion.a>
+          </motion.div>
+
+          <motion.div
+            className="flex items-center justify-center lg:justify-start gap-5 mt-6 text-gray-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.9 }}
+          >
+            {Bio.github && (
+              <a
+                href={Bio.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="hover:text-neon-cyan hover:scale-110 transition-all duration-300"
+              >
+                <GitHub fontSize="medium" />
+              </a>
+            )}
+            {Bio.linkedin && (
+              <a
+                href={Bio.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="hover:text-neon-cyan hover:scale-110 transition-all duration-300"
+              >
+                <LinkedIn fontSize="medium" />
+              </a>
+            )}
+            {Bio.tryhackme && (
+              <a
+                href={Bio.tryhackme}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TryHackMe"
+                className="hover:text-neon-cyan hover:scale-110 transition-all duration-300"
+              >
+                <SiTryhackme size={22} />
+              </a>
+            )}
+            {Bio.hackthebox && (
+              <a
+                href={Bio.hackthebox}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Hack The Box"
+                className="hover:text-neon-cyan hover:scale-110 transition-all duration-300"
+              >
+                <SiHackthebox size={22} />
+              </a>
+            )}
           </motion.div>
         </motion.div>
 
