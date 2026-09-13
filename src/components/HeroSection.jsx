@@ -4,6 +4,7 @@ import { Bio } from "../data/constants";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import { GitHub, LinkedIn } from "@mui/icons-material";
 import { SiTryhackme, SiHackthebox } from "react-icons/si";
+import { FaWhatsapp } from "react-icons/fa";
 
 const MORPH = [
   "60% 40% 30% 70% / 60% 30% 70% 40%",
@@ -208,6 +209,17 @@ const HeroSection = () => {
                 className="hover:text-neon-cyan hover:scale-110 transition-all duration-300"
               >
                 <SiHackthebox size={22} />
+              </a>
+            )}
+            {Bio.whatsapp && (
+              <a
+                href={Bio.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className="hover:text-[#25D366] hover:scale-110 transition-all duration-300"
+              >
+                <FaWhatsapp size={22} />
               </a>
             )}
           </motion.div>

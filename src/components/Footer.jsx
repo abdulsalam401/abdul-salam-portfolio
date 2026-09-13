@@ -5,6 +5,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import { Bio } from "../data/constants";
 import { GitHub } from "@mui/icons-material";
 import { SiTryhackme, SiHackthebox } from "react-icons/si";
+import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     // conatiner
@@ -111,6 +112,17 @@ const Footer = () => {
           >
             <SiHackthebox size={22} />
           </a>
+          {Bio.whatsapp && (
+            <a
+              href={Bio.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              className="inline-flex items-center justify-center text-darkTheme-text_primary transition-colors duration-200 hover:text-[#25D366]"
+            >
+              <FaWhatsapp size={22} />
+            </a>
+          )}
         </div>
         <p className="mt-[24px] text-[14px]  text-center">
           &copy; 2026 Abdul Salam. All rights reserved.

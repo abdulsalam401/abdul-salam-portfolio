@@ -20,6 +20,8 @@ export const Bio = {
   insta: "https://www.instagram.com/abdul.salam23",
   facebook: "https://www.facebook.com/share/184xMT836K/",
   email: "abdulsalam.cyber1@gmail.com",
+  whatsapp: "https://wa.me/923011909963?text=Hi%20Abdul%20Salam%2C%20I%20came%20across%20your%20portfolio!",
+  whatsappNumber: "+92 301 1909963",
 };
 
 export const skills = [

@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Snackbar } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import { Bio } from "../data/constants";
+import { FaWhatsapp } from "react-icons/fa";
 const Contact = () => {
   //hooks
   const [open, setOpen] = useState(false);
@@ -40,13 +41,26 @@ const Contact = () => {
         </div>
         <div className="text-[16px] text-center max-w-[600px] text-darkTheme-text_secondary mt-3 md:text-[18px]">
           Feel free to reach out to me for any questions or opportunities!
-          <br />
+        </div>
+        <div className="flex flex-wrap items-center justify-center gap-3 mt-2">
           <a
             href={`mailto:${Bio.email}`}
-            className="text-darkTheme-primary font-semibold hover:underline"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-neon-purple/40 bg-darkTheme-card_light text-darkTheme-text_primary hover:text-neon-cyan hover:border-neon-cyan/60 hover:shadow-[0_0_15px_rgba(0,243,255,0.3)] transition-all duration-300 text-sm md:text-base font-mono"
           >
-            {Bio.email}
+            <span>{Bio.email}</span>
           </a>
+          {Bio.whatsapp && (
+            <a
+              href={Bio.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat on WhatsApp"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#25D366]/50 bg-[#25D366]/15 text-emerald-300 hover:bg-[#25D366]/25 hover:border-[#25D366] hover:shadow-[0_0_20px_rgba(37,211,102,0.5)] transition-all duration-300 text-sm md:text-base font-mono font-medium"
+            >
+              <FaWhatsapp className="text-xl text-[#25D366]" />
+              <span>WhatsApp Me ({Bio.whatsappNumber})</span>
+            </a>
+          )}
         </div>
         <form
           ref={form}

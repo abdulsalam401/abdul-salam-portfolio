@@ -12,6 +12,7 @@ import CertificateDetails from "./components/CertificateDetails";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import WhatsAppMe from "./components/WhatsAppMe";
 
 const App = () => {
   const [openModal, setOpenModal] = useState({ state: false, project: null, type: "project" });
@@ -48,6 +49,7 @@ const App = () => {
           <CertificateDetails openModal={openModal} setOpenModal={setOpenModal} />
         )}
       </div>
+      <WhatsAppMe />
     </Background>
   );
 };
