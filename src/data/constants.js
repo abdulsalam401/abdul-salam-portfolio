@@ -15,7 +15,7 @@ export const Bio = {
   resume: "https://drive.google.com/file/d/1wG_Awyyj5p9wvtPq7osdK4n0S7s6XZWb/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/abdul-salam-39467a274",
   twitter: "https://x.com/abdulsalamyt72",
-  tryhackme: "https://tryhackme.com/p/Abdulsalam1133",
+  tryhackme: "https://tryhackme.com/p/S4LAM",
   hackthebox:
     "https://profile.hackthebox.com/profile/019f8daf-ff61-707f-af6f-948b1f5bacf3?utm_medium=copy_url",
   insta: "https://www.instagram.com/abdul.salam23",
