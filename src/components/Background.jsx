@@ -9,10 +9,10 @@ const Background = ({ children }) => {
                 {/* Base radial gradient wash */}
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(188,19,254,0.08),transparent_60%),radial-gradient(ellipse_at_bottom,rgba(0,243,255,0.06),transparent_60%)]"></div>
 
-                {/* Background Orbs */}
-                <div className="absolute top-[-10%] left-[-10%] w-[28rem] h-[28rem] bg-neon-purple/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
-                <div className="absolute top-[20%] right-[-10%] w-[28rem] h-[28rem] bg-neon-cyan/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob [animation-delay:2s]"></div>
-                <div className="absolute bottom-[-20%] left-[20%] w-[32rem] h-[32rem] bg-neon-pink/10 rounded-full mix-blend-screen filter blur-[120px] animate-blob [animation-delay:4s]"></div>
+                {/* Static ambient glow orbs — zero continuous repaint overhead */}
+                <div className="absolute top-[-10%] left-[-10%] w-[28rem] h-[28rem] bg-neon-purple/15 rounded-full filter blur-[100px] pointer-events-none"></div>
+                <div className="absolute top-[20%] right-[-10%] w-[28rem] h-[28rem] bg-neon-cyan/15 rounded-full filter blur-[100px] pointer-events-none"></div>
+                <div className="absolute bottom-[-20%] left-[20%] w-[32rem] h-[32rem] bg-neon-pink/10 rounded-full filter blur-[120px] pointer-events-none"></div>
 
                 {/* Subtle grid */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:80px_80px] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_75%)]"></div>

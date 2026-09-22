@@ -1,16 +1,10 @@
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import HeroImg from "../assets/my2.webp";
 import { Bio } from "../data/constants";
-import { motion, useInView, useReducedMotion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { GitHub, LinkedIn } from "@mui/icons-material";
 import { SiTryhackme, SiHackthebox } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
-
-const MORPH = [
-  "60% 40% 30% 70% / 60% 30% 70% 40%",
-  "30% 70% 70% 30% / 50% 60% 30% 60%",
-  "60% 40% 30% 70% / 60% 30% 70% 40%",
-];
 
 const useTypewriter = (words, { typeSpeed = 60, deleteSpeed = 30, pause = 1200 } = {}) => {
   const [text, setText] = useState("");
@@ -73,13 +67,6 @@ Typewriter.propTypes = {
 };
 
 const HeroSection = () => {
-  const shapeRef = useRef(null);
-  // Infinite animations keep repainting even when scrolled past, so only run
-  // them while the hero is actually on screen (and never if motion is reduced).
-  const inView = useInView(shapeRef, { margin: "100px" });
-  const reduceMotion = useReducedMotion();
-  const animateShapes = inView && !reduceMotion;
-
   return (
     <div
       id="about"
@@ -228,54 +215,29 @@ const HeroSection = () => {
         <motion.div
           id="Right"
           className="w-full order-1 lg:order-2 flex justify-center items-center lg:justify-end gap-4 mb-[30px] sm:mb-[50px]"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <motion.div
-            ref={shapeRef}
-            className="relative flex justify-center items-center w-full max-w-[280px] h-[280px] sm:max-w-[420px] sm:h-[420px] z-10"
-            animate={animateShapes ? { y: [0, -20, 0] } : { y: 0 }}
-            transition={
-              animateShapes
-                ? { duration: 5, repeat: Infinity, ease: "easeInOut" }
-                : { duration: 0.3 }
-            }
-          >
-            {/* Morphing glowing background */}
-            <motion.div
-              className="absolute inset-[-10px] bg-gradient-to-tr from-neon-purple to-neon-cyan opacity-60 blur-2xl"
-              style={{ borderRadius: MORPH[0], willChange: "transform" }}
-              animate={
-                animateShapes
-                  ? { borderRadius: MORPH, rotate: [0, 180, 360] }
-                  : { rotate: 0 }
-              }
-              transition={
-                animateShapes
-                  ? { duration: 15, repeat: Infinity, ease: "linear" }
-                  : { duration: 0.3 }
-              }
+          <div className="relative flex justify-center items-center w-full max-w-[280px] h-[280px] sm:max-w-[420px] sm:h-[420px] z-10 group">
+            {/* Ambient static neon glow behind image matching the organic shape */}
+            <div
+              className="absolute inset-[-10px] bg-gradient-to-tr from-neon-purple to-neon-cyan opacity-60 blur-2xl transition-opacity duration-300 group-hover:opacity-80"
+              style={{ borderRadius: "60% 40% 30% 70% / 60% 30% 70% 40%" }}
             />
 
-            {/* Image with morphing shape */}
-            <motion.img
+            {/* Photo with signature organic cyber shape — zero animation repaint overhead */}
+            <img
               src={HeroImg}
               alt="Abdul Salam, cybersecurity and ethical hacking student"
               width="420"
               height="420"
-              fetchPriority="high"
+              loading="eager"
               decoding="async"
-              className="relative object-cover w-full h-full border border-white/20 shadow-[inset_0_0_20px_rgba(255,255,255,0.2)]"
-              style={{ borderRadius: MORPH[0] }}
-              animate={animateShapes ? { borderRadius: MORPH } : {}}
-              transition={
-                animateShapes
-                  ? { duration: 8, repeat: Infinity, ease: "easeInOut" }
-                  : { duration: 0.3 }
-              }
+              className="relative object-cover w-full h-full border border-white/20 shadow-[inset_0_0_20px_rgba(255,255,255,0.2)] transition-transform duration-500 group-hover:scale-[1.02]"
+              style={{ borderRadius: "60% 40% 30% 70% / 60% 30% 70% 40%" }}
             />
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </div>

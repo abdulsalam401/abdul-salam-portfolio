@@ -17,8 +17,7 @@ const ProjectCard = ({ project, setOpenModal }) => {
   return (
     <motion.div
       onClick={() => setOpenModal({ state: true, project: project, type: "project" })}
-      className="w-[330px] h-[490px] glassmorphism-card cursor-pointer rounded-2xl overflow-hidden transition-all ease-in-out duration-500 hover:shadow-[0_0_30px_rgba(188,19,254,0.4)] hover:border-neon-purple/50 group flex flex-col pt-5 px-5 pb-4"
-      whileHover={{ y: -12 }}
+      className="w-[330px] h-[490px] glassmorphism-card cursor-pointer rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(188,19,254,0.4)] hover:border-neon-purple/50 group flex flex-col pt-5 px-5 pb-4"
     >
       <div className="relative overflow-hidden rounded-xl h-[180px] w-full">
         <img

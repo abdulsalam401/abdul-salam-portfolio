@@ -17,8 +17,8 @@ const WhatsAppMe = () => {
         aria-label="Chat on WhatsApp"
         className="group relative flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white px-3.5 py-3 rounded-full shadow-[0_0_20px_rgba(37,211,102,0.45)] hover:shadow-[0_0_30px_rgba(37,211,102,0.7)] border border-white/20 transition-all duration-300 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#25D366]/50"
       >
-        {/* Radar ping animation effect */}
-        <span className="absolute -inset-1 rounded-full bg-[#25D366]/40 animate-ping pointer-events-none -z-10 opacity-75" />
+        {/* Static ambient glow badge — no repaint overhead */}
+        <span className="absolute -inset-1 rounded-full bg-[#25D366]/30 blur-sm pointer-events-none -z-10 opacity-70 group-hover:opacity-100 transition-opacity" />
 
         {/* WhatsApp Icon */}
         <FaWhatsapp className="text-2xl transition-transform duration-300 group-hover:scale-110 shrink-0" />

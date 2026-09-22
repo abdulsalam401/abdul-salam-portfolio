@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards, Autoplay } from "swiper/modules";
+import { EffectCards } from "swiper/modules";
 import PropTypes from "prop-types";
 import {
   HiOutlineChevronLeft,
@@ -27,17 +27,12 @@ const CertificateDeck = ({ certificates, setOpenModal }) => {
           }}
           effect={"cards"}
           grabCursor={true}
-          modules={[EffectCards, Autoplay]}
+          modules={[EffectCards]}
           cardsEffect={{
             perSlideOffset: 12, // how far back cards stick out
             perSlideRotate: 3,  // slight tilt
             rotate: true,
             slideShadows: true,
-          }}
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
           }}
           loop={certificates.length > 2}
           speed={500}

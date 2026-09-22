@@ -19,8 +19,7 @@ const CertificateCard = ({ cert, setOpenModal }) => {
   return (
     <motion.div
       onClick={() => setOpenModal({ state: true, project: cert, type: "certificate" })}
-      className="group relative h-full flex flex-col rounded-2xl glassmorphism-card border border-white/10 hover:border-neon-cyan/50 cursor-pointer overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_rgba(0,243,255,0.2)] hover:-translate-y-2"
-      whileHover={{ y: -8 }}
+      className="group relative h-full flex flex-col rounded-2xl glassmorphism-card border border-white/10 hover:border-neon-cyan/50 cursor-pointer overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,243,255,0.2)] hover:-translate-y-2"
     >
       {/* Featured Ribbon / Badge */}
       {cert.featured && (

@@ -4,9 +4,9 @@ import passwordManager from "./Password-Manager.webp";
 export const Bio = {
   name: "Abdul Salam",
   roles: [
-    "Cybersecurity Enthusiast",
-    "Python Developer",
-    "Ethical Hacking Learner",
+    "Cybersecurity Researcher",
+    "Penetration Tester",
+    "Ethical Hacker",
     "Secure Systems Designer",
   ],
   description:
