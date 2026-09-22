@@ -6,10 +6,13 @@ const CertificateCard = ({ cert, setOpenModal }) => {
   const isGoogle = cert.school.toLowerCase().includes("google");
   const isCisco = cert.school.toLowerCase().includes("cisco");
   const isRedTeam = cert.school.toLowerCase().includes("red team");
+  const isHackviser = cert.school.toLowerCase().includes("hackviser");
 
   // Custom accent color based on issuer
   const accentColor = isGoogle
     ? "from-blue-500/20 via-cyan-500/10 to-transparent border-cyan-500/40 text-neon-cyan"
+    : isHackviser
+    ? "from-emerald-500/20 via-green-500/10 to-transparent border-emerald-500/40 text-emerald-400"
     : isCisco
     ? "from-emerald-500/20 via-teal-500/10 to-transparent border-teal-500/40 text-emerald-400"
     : isRedTeam

@@ -174,6 +174,7 @@ export const education = [
 ];
 
 // Certification Imports
+import hackviserCore from "./hackviser-cert.webp";
 import googleCybersecurity from "./Google-Cybersecurity.jpeg";
 import ccep from "./CCEP.webp";
 import cyberSecurity from "./CyberSecurity.webp";
@@ -191,6 +192,19 @@ import geminiStudent from "./Gemini_Certified_Student.webp";
 export const certifications = [
   {
     id: 0,
+    school: "Hackviser",
+    date: "Sep 2026",
+    degree: "Certified Cybersecurity Foundations (CORE)",
+    desc: "Earned the Certified Cybersecurity Foundations (CORE) certification by completing training modules and practical security exercises, demonstrating foundational competence in cybersecurity.",
+    img: hackviserCore,
+    grade: "Certification",
+    category: "Cybersecurity",
+    featured: true,
+    verifyUrl: "https://hackviser.com/verify?id=HV-CORE-Z7KI21YA",
+    tags: ["Cybersecurity Foundations", "Practical Exercises", "Threat Defense", "Hands-on Labs"],
+  },
+  {
+    id: 1,
     school: "Google",
     date: "Aug 2026",
     degree: "Google Cybersecurity",
